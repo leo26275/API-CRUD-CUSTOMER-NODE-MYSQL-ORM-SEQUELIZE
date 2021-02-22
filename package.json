@@ -1,0 +1,22 @@
+{
+  "name": "homeworksequelize",
+  "version": "1.0.0",
+  "description": "API con ORM Sequelize",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "LeoGarcia",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.5.0",
+    "sequelize-auto": "^0.7.11"
+  },
+  "devDependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
