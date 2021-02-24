@@ -31,5 +31,5 @@ router.delete('/customer/:id', (req, res) => {
         res.status(resultado.status).json({ status: resultado.status, response: resultado.response })
     });
 });
-
+//git push --set-upstream origin #nh0chy
 module.exports = router
