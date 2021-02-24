@@ -14,7 +14,7 @@ router.get('/customer/:id', (req, res) => {
     });
 });
 
-router.post('/customer', (req, res) => {
+router.post('/customser', (req, res) => {
     service.add(req.body).then(resultado => {
         res.status(resultado.status).json({ status: resultado.status, response: resultado.response })
     });
