@@ -2,31 +2,31 @@ const { Router } = require('express');
 const router = Router();
 const service = require('../services/customer_service');
 
-router.get('/list', (req, res) => {
+router.get('/customers/', (req, res) => {
     service.listar().then(resultado => {
         res.status(resultado.status).json({ status: resultado.status, response: resultado.response })
     });
 });
 
-router.get('/list/:id', (req, res) => {
+router.get('/customer/:id', (req, res) => {
     service.listByID(req.params.id).then(resultado => {
         res.status(resultado.status).json({ status: resultado.status, response: resultado.response })
     });
 });
 
-router.post('/add', (req, res) => {
+router.post('/customer', (req, res) => {
     service.add(req.body).then(resultado => {
         res.status(resultado.status).json({ status: resultado.status, response: resultado.response })
     });
 });
 
-router.put('/update', (req, res) => {
+router.put('/customer', (req, res) => {
     service.updateCustomer(req.body).then(resultado => {
         res.status(resultado.status).json({ status: resultado.status, response: resultado.response })
     });
 });
 
-router.delete('/delete/:id', (req, res) => {
+router.delete('/customer/:id', (req, res) => {
     service.deleteCustomer(req.params.id).then(resultado => {
         res.status(resultado.status).json({ status: resultado.status, response: resultado.response })
     });
