@@ -4,7 +4,7 @@ const { models } = require('../configs/database');
 async function listar() {
     const result = await models.Customer.findAll();
     if (!result) {
-        return { status: 404, response: 'NO se encontraron registros' }
+        return { status: 404, response: 'NO se encontraron registros en la BD' }
     }
     return { status: 200, response: result }
 }
