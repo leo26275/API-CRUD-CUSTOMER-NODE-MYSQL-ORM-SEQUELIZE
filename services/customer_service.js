@@ -24,7 +24,7 @@ async function add(body) {
         await models.Customer.create(body);
         return { status: 201, response: 'customer created successfully' }
     } catch (error) {
-        return { status: 400, response: 'No fue posible crear el cliente' }
+        return { status: 400, response: 'No fue posible crear el cliente solicitado' }
     }
 }
 
