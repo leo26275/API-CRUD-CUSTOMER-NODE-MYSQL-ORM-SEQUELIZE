@@ -47,7 +47,7 @@ async function updateCustomer(body) {
             }
         });
         
-        return { status: 202, response: 'Cliente actualizado' }
+        return { status: 202, response: 'Cliente actualizado correctamente' }
 
     } catch (error) {
         return { status: 500, response: "No fue posible actualizar el cliente con id" + body.id }
